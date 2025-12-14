@@ -19,7 +19,7 @@ prompt1 = PromptTemplate(
 )
 
 # model = ChatOpenAI() 
-# If we donnt have chatOpenAI cost then so am using free models
+# We can use GPT model if we have the that paid access key
 
 
 model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
@@ -54,3 +54,4 @@ chain= prompt1 | model | parser | prompt2 | model | parser
 
 
 print(chain.invoke({'topic':'AI'}))
+
