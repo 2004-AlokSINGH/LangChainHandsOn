@@ -35,7 +35,7 @@ llm_pipeline = pipeline(
     "text-generation",
     model=model,
     tokenizer=tokenizer,
-    max_new_tokens=100,
+    # max_new_tokens=100, #this is used to set the token length
     temperature=0.5
 )
 
@@ -51,5 +51,6 @@ prompt2 = PromptTemplate(
 
 # chain = RunnableSequence(prompt1, model, parser, prompt2, model, parser)
 chain= prompt1 | model | parser | prompt2 | model | parser
+
 
 print(chain.invoke({'topic':'AI'}))
