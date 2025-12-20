@@ -1,4 +1,4 @@
-# LangChain & LangGraph AI Agents (Hands-On)
+# LangChain & AI Agents (Hands-On)
 
 This repository contains hands-on implementations of **AI agents** built using **LangChain** and **LangGraph**, leveraging **open-source LLMs** for reasoning, tool execution, and retrieval-augmented generation (RAG).
 
