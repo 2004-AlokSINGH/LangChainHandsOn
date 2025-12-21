@@ -1,4 +1,4 @@
-````md
+
 # 🛠️ AI Ops Debug Copilot (LangChain + Groq)
 
 An AI-powered debugging copilot that analyzes backend logs, identifies root causes, suggests fixes, and conditionally creates Jira tickets — built using **LangChain’s modern Runnable API** and **Groq LLMs** with structured outputs.
@@ -128,3 +128,4 @@ app/
 * **LangChain team** for the Runnable + Core architecture
 
 ---
+
