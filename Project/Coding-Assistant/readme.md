@@ -26,7 +26,22 @@ Example output:
   "jira_ticket_required": false,
   "jira_ticket_id": null
 }
+
+or
+
+
+{'error_type': 'Deployment Error', 'root_cause': "Insufficient permissions for service account 'system:serviceaccount:ci:github-runner' to create deployments in 'production' namespace", 'suggested_fix': "Update the RoleBinding or ClusterRoleBinding to grant the 'system:serviceaccount:ci:github-runner' service account the necessary permissions to create deployments in the 'production' namespace", 'jira_ticket_required': True, 'jira_ticket_id': 'TEST-4'}
+
 ````
+**Now in case if jira required it will create jira and send it to you**
+and in json you can see details 
+```
+ 'jira_ticket_required': True,
+ 'jira_ticket_id': 'TEST-4'
+```
+
+<img width="1251" height="749" alt="image" src="https://github.com/user-attachments/assets/7439d479-07d2-485d-a271-ff6baf923bea" />
+
 
 ---
 
@@ -128,4 +143,5 @@ app/
 * **LangChain team** for the Runnable + Core architecture
 
 ---
+
 
